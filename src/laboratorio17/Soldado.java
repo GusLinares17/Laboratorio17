@@ -8,6 +8,13 @@ package laboratorio17;
  *
  * @author Gustavo
  */
+import java.util.Random;
 public class Soldado {
-    
+    int vida;
+    public Soldado() {
+        this.vida = new Random().nextInt(5) + 1;
+    }
+    public void incrementarVida() {
+        this.vida += 1;
+    }
 }
